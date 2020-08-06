@@ -296,10 +296,9 @@ p.read-more-detail i {
 }
 
 .virtual{
-    background: url('../img/services/Image-13.png') center center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(7, 55, 91, .6);
 }
 
 .btn-orange {	
