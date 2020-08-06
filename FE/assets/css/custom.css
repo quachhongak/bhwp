@@ -296,7 +296,7 @@ p.read-more-detail i {
 }
 
 .virtual{
-    background: url('http://wpdev.niftit.com/bluehawk/wp-content/uploads/2020/07/Image-13.png') center center;
+    background: url('../img/services/Image-13.png') center center;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(7, 55, 91, .6);
