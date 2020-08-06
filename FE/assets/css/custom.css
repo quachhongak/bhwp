@@ -14,6 +14,10 @@
     background-color: #4F81BD;	
 }	
 
+.bg-spindle-color {
+    background-color: #BACAD3;
+}
+
 .w-35 { 
     width: 35%;
 }
@@ -33,11 +37,10 @@
 }	
 .mb-75{	
     margin-bottom: 75px !important;	
-}
+}	
 .mb-150{
     margin-bottom: 150px !important;
 }
-
 .mb-125{	
     margin-bottom: 125px !important;	
 }	
@@ -216,9 +219,11 @@
     border: none;
     border-radius: 0px;
 }
+
 .banner-hawk{
-    background-color: rgb(49 77 94);
+    background-size: cover; 
 }
+
 .features {
     font-size: 20px;
 }
@@ -286,9 +291,15 @@ p.read-more-detail i {
     font-size: 30px;
 }
 
-#contact-us,	
-.virtual {
+#contact-us {
     background-color: #07375b;
+}
+
+.virtual{
+    background: url('http://wpdev.niftit.com/bluehawk/wp-content/uploads/2020/07/Image-13.png') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(7, 55, 91, .6);
 }
 
 .btn-orange {	
@@ -336,8 +347,8 @@ hr.contact-line {
 }
 
 .coporate-item .coporate-item-title {
-    font-weight: bold;
-    color: #07375b;
+    color: #404040 !important;
+    font-size: 21px;
 }
 
 .case_study .slogan {
@@ -354,10 +365,9 @@ hr.contact-line {
 
 /*service-page*/
 .service-title-body > h5{
-   line-height: 1.5;
-}
-/*service-page-end*/
-
+    line-height: 1.5;
+ }
+ /*service-page-end*/
 
 @media(max-width: 576px){
     /*service-page*/
@@ -439,7 +449,7 @@ hr.contact-line {
 
 .industries-expertise span p:nth-child(1){
     font-weight: bold; 
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 .industries-expertise span p:nth-child(2){
@@ -566,6 +576,18 @@ hr.contact-line {
     color: #BACAD3;	
     padding: 0 10px;	
 }	
+.mobile-nav .drop-down > a:after,
+.mobile-nav .active.drop-down > a:after {
+    content: "\f106";
+    font-family: FontAwesome;
+    padding-left: 10px;
+    position: absolute;
+    right: 15px;
+}
+  
+.mobile-nav .toggle.drop-down > a:after {
+    content: "\f107"; /* the desired FontAwesome icon */
+}
 
 /*Fix issue white space below footer in large screen for index*/
 @media (min-width: 992px){
