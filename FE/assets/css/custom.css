@@ -28,7 +28,12 @@
 .w-90 {	
     width: 90%;	
 }
-
+.h-80 {
+    height: 80%;
+}
+.h-90 {
+    height: 90%;
+}
 .mb-25 {	
     margin-bottom: 25px !important;	
 }	
@@ -366,18 +371,161 @@ hr.contact-line {
 .service-title-body > h5{
     line-height: 1.5;
  }
+ .case-study-height{
+    height: 90%;
+ }
+ .read-now-icon{
+    width: 50px;
+}
  /*service-page-end*/
-
-@media(max-width: 576px){
-    /*service-page*/
-    .position-icon{
-        top: 55%;
-        right: 0;
-    }
-    /*service-page-end*/
+ /*About US*/	
+#our-client p { 	
+    font-size: 20px;	
+}	
+#our-client .custom-height-img {	
+    height: 130px;	
+    margin: 0 auto;    	
+    display: block;	
+}	
+#our-client .custom-height-img img {	
+    position: absolute;	
+    top: 50%;	
+    left: 50%;	
+    transform: translate(-50%, -50%);	
+    width: 125px;
 }
 
-@media (max-width: 768px) {
+
+#about .text-1{
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+#about .text-2{
+    font-size: 25px;
+}
+
+.services .icon {
+    margin-bottom: 50px;
+}
+
+.services .icon img{
+    width: 75px;
+}
+
+#career-index {	
+    background-color: #07375B;	
+}	
+
+#career-index .container h2 {	
+    color:#fff;	
+}
+
+.career-working p{
+    margin-bottom: 0;
+}
+
+.career-working p:nth-child(1), 
+.career-working p:nth-child(2) {
+    margin-bottom: 1rem;
+}
+
+#inclusion {	
+    background-color: #BACAD3;	
+}	
+
+.slash-icon {	
+    color: #BACAD3;	
+    padding: 0 10px;	
+}	
+.mobile-nav .drop-down > a:after,
+.mobile-nav .active.drop-down > a:after {
+    content: "\f106";
+    font-family: FontAwesome;
+    padding-left: 10px;
+    position: absolute;
+    right: 15px;
+}
+  
+.mobile-nav .toggle.drop-down > a:after {
+    content: "\f107"; /* the desired FontAwesome icon */
+}
+
+
+@media(max-width: 576px) {
+    body{
+        padding-bottom:210px;	
+    }
+    .page-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    /*service-page*/
+    .features .row.content{
+        padding: 20px;
+    }
+
+    .feature-title ,
+    .feature-title.feature-title-light{
+        border-bottom: none;
+    }
+
+    .case-study-height{
+        height: auto;
+    }
+
+    .case-study-content{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /*service-page-end*/
+    /*industries-page*/
+    .feature-content.pr-70,
+    .case-study-mobile-pr-15,
+    .corporate-content.pr-70 {
+        padding-right: 15px !important;
+    }
+    .feature-content.pl-70,
+    .corporate-content.pl-70 {
+        padding-left: 15px !important;
+    }
+    .feature-content.pr-70,
+    .feature-content.pl-70,
+    .corporate-content.pl-70,
+    .corporate-content.pr-70 {
+        padding-top: 20px;
+    }
+    .feature-content.pr-70 div:first-child,
+    .feature-content.pl-70 div:first-child {
+        margin-bottom: 30px !important;
+    }
+    /*industries-page-end*/
+     /*about-us-page*/
+     #about .text-1 {
+        font-size: 30px;
+    }
+    #about.page-section {
+       padding-top: 40px;
+    }
+    .wrap-btn-banenr-home button:first-child {
+        margin-bottom: 10px;
+    }
+    /*about-us-page-end*/
+}
+
+@media(min-width: 496px) and (max-width: 576px){
+    /*about-us-page*/
+    .wrap-btn-banenr-home button:first-child {
+        margin-bottom: 0px;
+    }
+    /*about-us-page-end*/
+}
+
+
+@media (max-width: 768px) and (min-width: 576px) {
+    body{
+        padding-bottom: 200px;	
+    }
     .header-social-icon ul li{
         padding: 10px 0 10px 20px;
     }
@@ -405,18 +553,86 @@ hr.contact-line {
     .smb-150 {	
         margin-bottom: 150px;	
     }
-}
 
-@media (width: 768px){
      /*service-page*/
-     .position-icon{
-        right: 0;
-        top: 40%;
+     .page-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
-    .position-icon i{
-        font-size: 3rem;
+    /*service-page*/
+    .features .row.content{
+        padding: 20px;
+    }
+
+    .feature-title ,
+    .feature-title.feature-title-light{
+        border-bottom: none;
+    }
+
+    .case-study-height{
+        height: auto;
+    }
+
+    .case-study-content{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     /*service-page-end*/
+      /*industries-page*/
+      .feature-content.pr-70,
+      .case-study-mobile-pr-15,
+      .corporate-content.pr-70 {
+        padding-right: 15px !important;
+    }
+    .feature-content.pl-70,
+    .corporate-content.pl-70 {
+        padding-left: 15px !important;
+    }
+    /*industries-page-end*/
+       /*industries-page-end*/
+     /*about-us-page*/
+     #about .text-1 {
+        font-size: 30px;
+    }
+  
+    /*about-us-page-end*/
+    .corporate-img {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px){
+    body{
+        padding-bottom: 150px;	
+    }
+    /*service-page*/
+    .features .row.content{
+        padding: 20px;
+    }
+
+    .feature-title ,
+    .feature-title.feature-title-light{
+        border-bottom: none;
+    }
+
+    .case-study-height{
+        height: 90%;
+    }
+
+    .case-study-content{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .read-now-icon{
+        width: 40px;
+    }
+  
+    /*service-page-end*/ 
+    /*case-study-page*/
+   .case-study-mobile-pr-15 {
+     padding-right: 15px !important;
+    }
+    /*case-study-page-end*/
 }
 
 
@@ -498,9 +714,12 @@ hr.contact-line {
     }
     
     /*service-page*/
-    .position-icon{
-        top: 55%;
-        right: 0;
+    .read-now-icon{
+        width: 50px;
+    }
+    .feature-title ,
+    .feature-title.feature-title-light{
+        border-bottom: 3px solid #4f81bd;
     }
     /*service-page-end*/
 }
@@ -515,78 +734,7 @@ hr.contact-line {
     width: 100%;
 } */
 
-/*About US*/	
-#our-client p { 	
-    font-size: 20px;	
-}	
-#our-client .custom-height-img {	
-    height: 130px;	
-    margin: 0 auto;    	
-    display: block;	
-}	
-#our-client .custom-height-img img {	
-    position: absolute;	
-    top: 50%;	
-    left: 50%;	
-    transform: translate(-50%, -50%);	
-    width: 125px;
-}
 
-
-#about .text-1{
-    font-size: 45px;
-    margin-top: 30px;
-}
-
-#about .text-2{
-    font-size: 25px;
-}
-
-.services .icon {
-    margin-bottom: 50px;
-}
-
-.services .icon img{
-    width: 75px;
-}
-
-#career-index {	
-    background-color: #07375B;	
-}	
-
-#career-index .container h2 {	
-    color:#fff;	
-}
-
-.career-working p{
-    margin-bottom: 0;
-}
-
-.career-working p:nth-child(1), 
-.career-working p:nth-child(2) {
-    margin-bottom: 1rem;
-}
-
-#inclusion {	
-    background-color: #BACAD3;	
-}	
-
-.slash-icon {	
-    color: #BACAD3;	
-    padding: 0 10px;	
-}	
-.mobile-nav .drop-down > a:after,
-.mobile-nav .active.drop-down > a:after {
-    content: "\f106";
-    font-family: FontAwesome;
-    padding-left: 10px;
-    position: absolute;
-    right: 15px;
-}
-  
-.mobile-nav .toggle.drop-down > a:after {
-    content: "\f107"; /* the desired FontAwesome icon */
-}
 
 /*Fix issue white space below footer in large screen for index*/
 @media (min-width: 992px){
